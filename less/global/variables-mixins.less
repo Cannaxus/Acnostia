@@ -1,0 +1,34 @@
+@import "fonts.less";
+
+@main-font-size: 14px;
+@main-font-color: rgba(255, 255, 255, 1);
+@main-font-weight: normal;
+@main-font-style: normal;
+@main-font-stretch: normal;
+@main-font-letter-spacing: normal;
+
+.font-mixin{
+  font-size: @main-font-size;
+  font-weight: @main-font-weight;
+  font-style: @main-font-style;
+  font-stretch: @main-font-stretch;
+  letter-spacing: @main-font-letter-spacing;
+  color: @main-font-color;
+}
+
+
+
+
+//----------------------------------------------
+
+.font-mixin-black {
+  font-family: 'Lato Black', Arial, sans-serif;
+    font-size: 14px;
+  line-height: 21px;
+}
+
+p {
+	font-size: @main-font-size;
+	line-height: @baseLineHeight;
+	.font-mixin-black;
+}
