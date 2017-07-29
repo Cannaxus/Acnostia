@@ -1,15 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Acnostia</title>
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    
-    
-    
-    
-    
-    
+    <header>
+        <div class="container">
+            <a href="#"><img src="img/logo.png" class="logo" width="151px" height="30px" alt="logo"></a>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li><a href="#home" class="main-nav__list--color">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slogan">
+        <div class="slogan--left">GOOD IDEAS comes</div>
+        <div class="slogan--right">First!</div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="slide1 item active">
+            </div>
+            <div class="slide2 item">
+            </div>
+            <div class="slide3 item">
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <img src="img/arrow-left.png" alt="arrow-left" width="32px" height="56px">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <img src="img/arrow-right.png" alt="arrow-right" width="32px" height="56px">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <section class="services">
+        <div class="container">
+            <div class="services__textblock">
+                <h2>Our services</h2>
+                <p class="services__textblock--medium-size"> Cras commodo mattis justo nec <span>lobortis</span>. Nam ut tellus lobortis, ullamcorper massa sit amet</p>
+                <p class="services__textblock--standart-size">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+            </div>
+            <div class="services__flexblock">
+                <article class="col">
+                    <img src="img/services-research.svg" alt="item-research" width="140px" height="140px">
+                    <h3>Researching</h3>
+                    <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                </article>
+                
+                <article class="col">
+                    <img src="img/services-design.svg" alt="item-design" width="140px" height="140px">
+                    <h3>Design</h3>
+                    <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                </article>
+                <article class="col">
+                    <img src="img/services-development.svg" alt="item-development" width="140px" height="140px">
+                    <h3>Development</h3>
+                    <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                </article>
+                <article class="col">
+                    <img src="img/services-launch.svg" alt="item-launch" width="140px" height="140px">
+                    <h3>launch</h3>
+                    <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__textblock">
+                <h2>Who we are & what we do</h2>
+                <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+                <btn></btn>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
