@@ -39,7 +39,7 @@ module.exports = function(grunt) {
                 tasks: ["less", "postcss"]
             }
         },
-        browserSync: {
+        browsersync: {
             server: {
                 bsFiles: {
                     src: ["*.html", "css/*.css"]
