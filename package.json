@@ -1,0 +1,30 @@
+{
+  "name": "acro",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "autoprefixer": "^7.1.2",
+    "express": "^4.15.3",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-postcss": "^0.8.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cannaxus/acnostia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cannaxus/acnostia/issues"
+  },
+  "homepage": "https://github.com/cannaxus/acnostia#readme"
+}
