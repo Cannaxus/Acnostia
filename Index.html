@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+<!--    --------owl carousel---------->
+    <link rel="stylesheet" href="owl.carousel.min.css" />
+<!--    <link rel="stylesheet" href="owl.theme.default.css" />-->
+    
+    
+    
 </head>
 
 
@@ -52,12 +59,12 @@
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <img src="img/arrow-left.png" alt="arrow-left" width="32px" height="56px">
-            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="glyphicon glyphicon-chevron-left" style=" width: 110%; height: 1010px; left: 0px; top: 0px;"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <img src="img/arrow-right.png" alt="arrow-right" width="32px" height="56px">
-            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="glyphicon glyphicon-chevron-right" style=" width: 110%; height: 1010px; right: 0px; top: 0px;"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -98,10 +105,47 @@
             <div class="about__textblock">
                 <h2>Who we are & what we do</h2>
                 <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
-                <btn></btn>
+                <btn class="about__textblock--btn">Open Modal</btn>
+            </div>
+            <div class="about__flexblock">
+                <article class="card">
+                    <img src="img/card-ava.png" alt="avatar" width="164px" height="164px">
+                    <h3>Anton Petrov</h3>
+                    <p>General manager</p>
+                </article>
+                <article class="card">
+                    <img src="img/card-ava.png" alt="avatar" width="164px" height="164px">
+                    <h3>Kirl Donchev</h3>
+                    <p>Design Master</p>
+                </article>
+                <article class="card">
+                    <img src="img/card-ava.png" alt="avatar" width="164px" height="164px">
+                    <h3>Ilian Bonev</h3>
+                    <p>Developer Ninja</p>
+                </article>
+                <article class="card">
+                    <img src="img/card-ava.png" alt="avatar" width="164px" height="164px">
+                    <h3>Doni Stamov</h3>
+                    <p>SEO guru</p>
+                </article>
+                
             </div>
         </div>
     </section>
+                
+            
+        <div class="owl-carousel owl-theme" style="width: 500px; height: 500px; display: block;">
+            <div> Контент </div>
+            <div> Контент </div>
+        </div>    
+            
+
+<!--    --------owl carousel---------->
+    <script src="owl.carousel.min.js"></script>
+    <script>$(document).ready(function(){
+    $('.owl-carousel').owlCarousel();
+    });</script>
+    
 </body>
 
 </html>

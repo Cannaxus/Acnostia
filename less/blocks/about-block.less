@@ -2,21 +2,105 @@
     width: auto;
     height: 1000px;
     background: url('../img/layer-about.png') no-repeat #665464;
-    background-size: 100%;
+    background-size: cover;
     &__textblock {
         width: 1053px;
         padding-top: 200px;
+        margin-bottom: 69px;
         h2 {
             padding-left: 134px;
             letter-spacing: -1.6px;
         }
         p {
-            
             width: 1062px;
             margin-top: 16px;
             margin-left: 21px;
             letter-spacing: 0.1px;
             .font-mixin-p
         }
+        &--btn {
+            position: relative;
+            display: block;
+            margin: 52px auto;
+            left: 20px;
+            width: 276px;
+            height: 50px;
+            border-radius: 5px;
+            padding: 16px 42px;
+            background-color: #a1ca6c;
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+            font-size: 25px;
+            animation: b 3s infinite alternate;
+            cursor: pointer;
+            .font-mixin-black;
+            &::after {
+                content: '';
+                height: 34px;
+                border-right: 17px solid transparent;
+                border-left: 17px solid transparent;
+                border-top: 17px solid #a1ca6c;
+                position: absolute;
+                bottom: -33px;
+                left: 125px;
+                animation: c 3s infinite alternate;
+            }
+        }
+    }
+    &__flexblock  {
+        display: flex;
+        width: 1100px;
+        height: 1000px;
+        .card {
+            display: inline-block;
+            width: 260px;
+            height: 380px;
+            border-radius: 4px 5px 5px 4px;
+            background-color: rgba(77,63,75, 0.5);
+            padding-top: 42px;
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0px;
+            }
+            img {
+                width: 164px;
+                height: 164px;
+                margin-left: 46px;
+            }
+            h3 {
+                color: #c7b6c5;
+                font-size: 25px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 11px;
+                .font-mixin-black
+            }
+            p {
+                text-align: center;
+                color: #a1ca6c;
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 0;
+                .font-mixin-regular;
+            }
+            
+        }
+        
+    }
+}
+
+@keyframes b {
+    50% {
+        background: white;
+        color: #a1ca6c;
+    }
+}
+
+@keyframes c {
+    50% {
+        border-right: 17px solid transparent;
+        border-left: 17px solid transparent;
+        border-top: 17px solid white;
     }
 }
