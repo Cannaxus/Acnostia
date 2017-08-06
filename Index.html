@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-<!--    --------owl carousel---------->
+
+    <!--    --------owl carousel---------->
     <link rel="stylesheet" href="owl.carousel.min.css" />
-<!--    <link rel="stylesheet" href="owl.theme.default.css" />-->
-    
-    
-    
+    <!--    <link rel="stylesheet" href="owl.theme.default.css" />-->
+
+
+
 </head>
 
 
@@ -81,7 +81,7 @@
                     <h3>Researching</h3>
                     <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
                 </article>
-                
+
                 <article class="col">
                     <img src="img/services-design.svg" alt="item-design" width="140px" height="140px">
                     <h3>Design</h3>
@@ -128,24 +128,48 @@
                     <h3>Doni Stamov</h3>
                     <p>SEO guru</p>
                 </article>
-                
+
             </div>
         </div>
     </section>
-                
-            
-        <div class="owl-carousel owl-theme" style="width: 500px; height: 500px; display: block;">
-            <div> Контент </div>
-            <div> Контент </div>
-        </div>    
-            
 
-<!--    --------owl carousel---------->
+
+
+
+
+
+    <div class="modal">
+        <btn class="close-modal">Close</btn>
+        <div class="modal__form">
+            <p>Slider</p>
+
+
+            <div class="owl-carousel owl-theme" style="width: 500px; height: 500px; display: block;">
+                <div> <img src="img/card-ava.png" alt="avatar" width="164px" height="164px"> </div>
+                <div> <img src="img/card-ava.png" alt="avatar" width="164px" height="164px"> </div>
+                <div> <img src="img/card-ava.png" alt="avatar" width="164px" height="164px"> </div>
+                <div> <img src="img/card-ava.png" alt="avatar" width="164px" height="164px"> </div>
+            </div>
+            <btn class="send-modal">Отправить</btn>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+
+    <!--    --------owl carousel---------->
+
+    <!--    js script    -->
     <script src="owl.carousel.min.js"></script>
-    <script>$(document).ready(function(){
-    $('.owl-carousel').owlCarousel();
-    });</script>
-    
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel();
+        });
+
+    </script>
+
 </body>
 
 </html>

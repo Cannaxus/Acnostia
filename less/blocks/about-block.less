@@ -48,7 +48,7 @@
             }
         }
     }
-    &__flexblock  {
+    &__flexblock {
         display: flex;
         width: 1100px;
         height: 1000px;
@@ -57,7 +57,7 @@
             width: 260px;
             height: 380px;
             border-radius: 4px 5px 5px 4px;
-            background-color: rgba(77,63,75, 0.5);
+            background-color: rgba(77, 63, 75, 0.5);
             padding-top: 42px;
             margin-right: 20px;
             &:last-child {
@@ -84,10 +84,63 @@
                 margin-top: 0;
                 .font-mixin-regular;
             }
-            
         }
-        
     }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -150px;
+    z-index: 15;
+    width: 800px;
+    height: 300px;
+    //    background-color: rgba(225, 225, 225, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.67);
+    border: 1px solid #000000;
+    background-image: linear-gradient(to top, #3d3d3d 0%, #333333 100%);
+    .close-modal {
+        display: block;
+        /* border: none; */
+        width: 80px;
+        height: 30px;
+        margin-left: 7px;
+        margin-top: 7px;
+        box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.44), inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, #131313 0%, #131313 1%, #424242 100%);
+        text-shadow: 0 -1px 0 #000000;
+        color: #ededed;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .modal__form {
+        float: right;
+        width: 784px;
+        height: 205px;
+        border-radius: 4px 5px 5px 4px;
+        background-color: #eeeeee;
+        background-color: #ffffff;
+        z-index: 120;
+        margin-left: 7px;
+        
+        p {
+            width: 800px;
+            margin-top: 16px;
+            margin-left: 21px;
+            
+            .font-mixin-p
+        }
+    }
+}
+
+.modal-go {
+    display: block;
 }
 
 @keyframes b {
