@@ -239,6 +239,26 @@ header .main-nav__list li a:hover {
   margin-left: 59px;
   opacity: 1;
 }
+.services__flexblock .col .sprite {
+  margin-left: 52px;
+  margin-top: 39px;
+  background-size: cover;
+  width: 156px;
+  height: 151px;
+  background-image: url(../img/Sprite_Acrostia.svg);
+}
+.services__flexblock .col .sprite--research {
+  background-position: 154px -2px;
+}
+.services__flexblock .col .sprite--design {
+  background-position: 4px -2px;
+}
+.services__flexblock .col .sprite--develop {
+  background-position: -146px -2px;
+}
+.services__flexblock .col .sprite--launch {
+  background-position: -297px -2px;
+}
 .services__flexblock .col h3 {
   font-family: 'Lato Light', Arial, sans-serif;
   font-size: 30px;
@@ -246,7 +266,7 @@ header .main-nav__list li a:hover {
   opacity: 1;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 21px;
+  margin-top: 15px;
   margin-bottom: 35px;
 }
 .services__flexblock .col p {
@@ -321,6 +341,7 @@ header .main-nav__list li a:hover {
   height: 1000px;
 }
 .about__flexblock .card {
+  position: relative;
   display: inline-block;
   width: 260px;
   height: 380px;
@@ -332,10 +353,30 @@ header .main-nav__list li a:hover {
 .about__flexblock .card:last-child {
   margin-right: 0px;
 }
-.about__flexblock .card img {
-  width: 164px;
-  height: 164px;
+.about__flexblock .card .card-ava--out {
+  width: 165px;
+  height: 165px;
   margin-left: 46px;
+  background-position: -20px -20px;
+  background-image: url(../img/sprite.png);
+}
+.about__flexblock .card:hover .card-ava--out {
+  animation: ava-out 0.5s linear;
+  animation-fill-mode: forwards;
+}
+.about__flexblock .card .card-ava--in {
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  margin-left: 46px;
+  background-position: -226px -20px;
+  background-image: url(../img/sprite.png);
+  opacity: 0;
+  top: 42px;
+}
+.about__flexblock .card:hover .card-ava--in {
+  animation: ava-in 0.5s linear;
+  animation-fill-mode: forwards;
 }
 .about__flexblock .card h3 {
   color: #c7b6c5;
@@ -352,7 +393,36 @@ header .main-nav__list li a:hover {
   font-size: 14px;
   font-weight: 400;
   margin-top: 0;
+  margin-bottom: 33px;
   font-family: 'Lato Regular', Arial, sans-serif;
+}
+.about__flexblock .card__social {
+  width: 200px;
+  margin-left: 41px;
+}
+.about__flexblock .card__social .social-btn {
+  margin-right: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/sprite.png);
+  background-color: #a1859e;
+}
+.about__flexblock .card__social .social-btn:last-child {
+  margin-right: 0px;
+}
+.about__flexblock .card__social--fb {
+  background-position: -423px -87px;
+}
+.about__flexblock .card__social--tw {
+  background-position: -473px -87px;
+}
+.about__flexblock .card__social--g {
+  background-position: -523px -87px;
+}
+.about__flexblock .card__social--in {
+  background-position: -573px -87px;
 }
 .modal {
   display: none;
@@ -420,5 +490,21 @@ header .main-nav__list li a:hover {
     border-right: 17px solid transparent;
     border-left: 17px solid transparent;
     border-top: 17px solid white;
+  }
+}
+@keyframes ava-out {
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ava-in {
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
