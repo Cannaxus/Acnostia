@@ -1,0 +1,219 @@
+html,
+body {
+/*
+    height: 100%;
+    background: #f2f2f2;
+*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Controls
+---------------------------------------------------------------------- */
+
+.controls {
+    font-size: 0;
+    float: right;
+    margin-top: 7px;
+
+    border-radius: 5px;
+        
+}
+
+.control {
+    position: relative;
+    display: inline-block;
+    background: rgba(0,0,0, 0.1);
+    cursor: pointer;
+    font-family: 'Lato Bold', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    border: 2px solid rgba(0,0,0,0);  
+}
+.control:first-child {
+    margin-right: 3px;
+    border-radius: 5px;
+}
+
+.control:hover {
+    border: 2px solid #f6c248;
+/*    border-radius: 5px;*/
+}
+
+.control[data-filter]:after,
+.control[data-toggle]:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+/*    border: 2px solid currentColor;*/
+/*    border-radius: 2px;*/
+/*    background: currentColor;*/
+/*    transition: background-color 150ms, border-color 150ms;*/
+}
+
+.mixitup-control-active {
+    background: #f6c248;
+}
+/*----- цвет-----*/
+.mixitup-control-active[data-toggle]:after {
+/*    background: transparent;*/
+}
+/*---------------*/
+
+.control:nth-child(2) {
+    border-radius: 5px 0 0 5px;
+}
+
+.control:last-of-type {
+    border-radius: 0 5px 5px 0;
+}
+
+.control[data-filter=".green"],
+.control[data-toggle=".green"] {
+/*    color: #91e6c7;*/
+}
+
+.control[data-filter=".blue"],
+.control[data-toggle=".blue"] {
+/*    color: #5ecdde;*/
+}
+
+.control[data-filter=".pink"],
+.control[data-toggle=".pink"] {
+/*    color: #d595aa;*/
+}
+
+/* Container
+---------------------------------------------------------------------- */
+
+.containermix {   
+    text-align: justify;
+    font-size: 0.1px;
+}
+
+.containermix:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mix {
+   
+     background: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.mix:before {
+    content: '';
+    display: inline-block;
+/*    border-top: .5rem solid transparent;*/
+}
+
+/*
+.mix.green {
+    color: #91e6c7;
+}
+
+.mix.pink {
+    color: #d595aa;
+}
+
+.mix.blue {
+    color: #5ecdde;
+}
+*/
+
+/*
+.mix.pink.green:before {
+    width: 100%;
+    border-top-color: #91e6c7;
+}
+
+.mix.green.blue:before {
+    width: 100%;
+    border-top-color: #91e6c7;
+}
+
+.mix.blue.pink:before {
+    width: 100%;
+    border-top-color: #d595aa;
+}
+*/
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* EDITED! */
+.control {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mix img {
+    background-size: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+
+.mix,
+.gap {
+/*    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));*/
+    width: 260px;
+    height: 250px;
+    
+}
+
+/* 3 Columns */
+/*
+
+@media screen and (min-width: 541px) {
+    .mix,
+    .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
+}
+*/
+
+/* 4 Columns */
+/*
+
+@media screen and (min-width: 961px) {
+    .mix,
+    .gap {
+        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+    }
+}
+*/
+
+/* 5 Columns */
+/*
+
+@media screen and (min-width: 1281px) {
+    .mix,
+    .gap {
+        width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+    }
+}
+*/
+
+
