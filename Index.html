@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Acnostia</title>
-    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">-->
+    <!--    <link rel="stylesheet" -->
     <link rel="stylesheet" href="css/bootstrap.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,100 +19,36 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- fullpage -->
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
 
-
+    <!--gallery-->
 
 </head>
-
 
 <body>
     <header>
         <div class="container">
-            <a href="#"><img src="img/logo.png" class="logo" width="151" height="30" alt="logo"></a>
+            <a href="#"><img src="img/logo.png" class="logo" width="151px" height="30px" alt="logo"></a>
             <nav class="main-nav">
-                <div id="fp-nav" class="fp-show-active right" style="margin-top: -43.5px;">
-
-                    <ul class="main-nav__list">
-                       
-<!--
-                       <li><a href="#home" class="main-nav__list--color">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                        
-                        
--->
-                       
-                        
-                        <!--
-        <li><a href="#firstPage" class="active"><span></span></a>
-            <div class="fp-tooltip right">firstSlide</div>
-        </li>
-        <li><a href="#secondPage" class=""><span></span></a>
-            <div class="fp-tooltip right">secondSlide</div>
-        </li>
-        <li><a href="#undefined" class=""><span></span></a></li>
-        <li><a href="#undefined" class=""><span></span></a></li>
--->
-                  
-                    </ul>
-                    
-
-                </div>
+                <ul class="main-nav__list">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services" class="">Services</a></li>
+                    <li><a href="#about" class="">About</a></li>
+                    <li><a href="#work" class="">Work</a></li>
+                    <li><a href="#contacts" class="">Contacts</a></li>
+                </ul>
+                <div class="fullpage-container" style="">
+                <div id="fp-nav" class="fp-show-active right" style="/* margin-top: -43.5px; */">
+                    <ul></ul></div></div>
             </nav>
         </div>
     </header>
 
-
-    <!--    <header>-->
-
-    <!--
-       
-
-            <a href="#"><img src="img/logo.png" class="logo" width="151px" height="30px" alt="logo"></a>
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li><a href="#home" class="main-nav__list--color">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-
-        </div>
--->
-
-    <!--    </header>-->
-
-    <!--modal css-->
-    <div class="modal">
-        <button class="close-modal">Close</button>
-        <div class="modal__form">
-            <p>Slider</p>
-            
-
-            <!--
-
-            <div class="owl-carousel owl-theme" style="width: 500px; height: 500px; display: block;">
-                <div> <img src="img/card-ava.png" alt="avatar" width="164px" height="164px"> </div>
-                <div> <img src="img/card-ava.png" alt="avatar" width="164px" height="164px"> </div>
-                <div> <img src="img/card-ava.png" alt="avatar" width="164px" height="164px"> </div>
-                <div> <img src="img/card-ava.png" alt="avatar" width="164px" height="164px"> </div>
-            </div>
--->
-            <button class="send-modal">Отправить</button>
-        </div>
-    </div>
-
     <div id="fullpage">
-        <div class="section">
-            
+
+
+        <div class="section"  id="home">
             <div class="slogan">
                 <div class="slogan--left">GOOD IDEAS comes</div>
                 <div class="slogan--right">First!</div>
@@ -149,7 +85,7 @@
             </div>
 
         </div>
-        <section class="section services">
+        <section id="services" class="section services">
             <div class="container">
                 <div class="services__textblock">
                     <h2>Our services</h2>
@@ -182,7 +118,7 @@
                 </div>
             </div>
         </section>
-        <section class="section about">
+        <section id="about" class="section about">
             <div class="container">
                 <div class="about__textblock">
                     <h2>Who we are & what we do</h2>
@@ -242,7 +178,7 @@
                 </div>
             </div>
         </section>
-        <section class="section work">
+        <section id="work" class="section work">
             <div class="container">
                 <div class="work__textblock">
                     <h2>Our work</h2>
@@ -260,128 +196,109 @@
                 </div>
 
                 <div class="containermix">
-                    <div class="mix green mountain">
-                        <img src="img/gallery_6.jpg" width="260" height="200" alt="gallery_picture">
-                        <h3>Aenean a elit</h3>
+                    <div>
+                        <div class="mix green mountain">
+                            <img src="img/gallery_6.jpg" width="260" height="200" alt="gallery_picture">
+                            <h3>Aenean a elit</h3>
+                        </div>
+                        <div class="mix green winter mountain">
+                            <img src="img/gallery_1.jpg" width="260" height="200" alt="gallery_picture">
+                            <h3>Aliquam </h3>
+                        </div>
+                        <div class="mix green">
+                            <img src="img/gallery_3.jpg" width="260" height="200" alt="gallery_picture">
+                            <h3>Suspendisse libero</h3>
+                        </div>
+                        <div class="mix mountain">
+                            <img src="img/gallery_4.jpg" width="260" height="200" alt="gallery_picture">
+                            <h3>Maecenas fringilla</h3>
+                        </div>
+                        <div class="mix green mountain">
+                            <img src="img/gallery_5.jpg" width="260" height="200" alt="gallery_picture">
+                            <h3>Donec vehicula</h3>
+                        </div>
+                        <div class="mix winter mountain">
+                            <img src="img/gallery_2.jpg" width="260" height="200" alt="gallery_picture">
+                            <h3>Ut et sapien</h3>
+                        </div>
+                        <div class="mix green winter">
+                            <img src="img/gallery_7.jpg" width="260" height="200" alt="gallery_picture">
+                            <h3>quis malesuada</h3>
+                        </div>
+                        <div class="mix green">
+                            <img src="img/gallery_8.jpg" width="260" height="200" alt="gallery_picture">
+                            <h3>Vestibulum ante</h3>
+                        </div>
+                        <div class="gap"></div>
+                        <div class="gap"></div>
+                        <div class="gap"></div>
                     </div>
-                    <div class="mix green winter mountain">
-                        <img src="img/gallery_1.jpg" width="260" height="200" alt="gallery_picture">
-                        <h3>Aliquam </h3>
-                    </div>
-                    <div class="mix green">
-                        <img src="img/gallery_3.jpg" width="260" height="200" alt="gallery_picture">
-                        <h3>Suspendisse libero</h3>
-                    </div>
-                    <div class="mix mountain">
-                        <img src="img/gallery_4.jpg" width="260" height="200" alt="gallery_picture">
-                        <h3>Maecenas fringilla</h3>
-                    </div>
-                    <div class="mix green mountain">
-                        <img src="img/gallery_5.jpg" width="260" height="200" alt="gallery_picture">
-                        <h3>Donec vehicula</h3>
-                    </div>
-                    <div class="mix winter mountain">
-                        <img src="img/gallery_2.jpg" width="260" height="200" alt="gallery_picture">
-                        <h3>Ut et sapien</h3>
-                    </div>
-                    <div class="mix green winter">
-                        <img src="img/gallery_7.jpg" width="260" height="200" alt="gallery_picture">
-                        <h3>quis malesuada</h3>
-                    </div>
-                    <div class="mix green">
-                        <img src="img/gallery_8.jpg" width="260" height="200" alt="gallery_picture">
-                        <h3>Vestibulum ante</h3>
-                    </div>
-
-                    <div class="gap"></div>
-                    <div class="gap"></div>
-                    <div class="gap"></div>
                 </div>
-
-
             </div>
-
-
         </section>
-
-
-        <!-- СМОТРЕТЬ ПО ЭТОМУ МАКЕТУ -->
-
-
-
-
-
-
-
-
-
-        <!--mixitup-->
-        <script src="js/mixitup.min.js"></script>
-
-        <script>
-            var containerEl = document.querySelector('.containermix');
-
-            var mixer = mixitup(containerEl, {
-                controls: {
-                    toggleLogic: 'and'
-                }
-            });
-
-        </script>
-
-
-
-
-
-
-
-        <script src="js/main.js"></script>
-
-        <!-- owl carousel -->
-
-        <!-- js script -->
-        <script src="owl.carousel.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('.owl-carousel').owlCarousel();
-            });
-
-        </script>
-
-
-
-
-
-
-
-        <!-- fullpage -->
-        <script>
-            $(document).ready(function() {
-                $('#fullpage').fullpage({
-                    menu: '#menu',
-                    lockAnchors: false,
-                    anchors: [''],
-                    navigation: true,
-                    navigationPosition: 'right',
-                    navigationTooltips: ['Home','Service','About','work'],
-                    showActiveTooltip: true,
-                    slidesNavigation: true,
-                    slidesNavPosition: 'bottom',
-
-
-
-                    scrollBar: true
-                });
-            });
-
-        </script>
-
-
-
-
-
-
     </div>
+    <!--modal About-->
+    <div class="modal">
+        <button class="close-modal">Close</button>
+        <div class="modal__form">
+            <p>Slider</p>
+            <button class="send-modal">Отправить</button>
+        </div>
+    </div>
+    <!--modal Gallery-->
+    <div class="modal-gallery">
+        <button class="close-modal-gallery">Close</button>
+    </div>
+    <!-- scripts -->
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    
+    <!--mixitup-->
+    <script src="js/mixitup.min.js"></script>
+
+    <script>
+        var containerEl = document.querySelector('.containermix');
+        var mixer = mixitup(containerEl, {
+            controls: {
+                toggleLogic: 'and'
+            }
+        });
+    </script>
+
+    <!-- fullpage -->
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                menu: '#menu',
+                lockAnchors: false,
+                anchors: [''],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Home', 'Service', 'About', 'Work'],
+                showActiveTooltip: true,
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
+            });
+        });
+    </script>
+    
+    
+    
+<!--  active punkt in main-nav  -->
+
+
+<script>
+
+    </script>
+<!--
+<script>
+$(".main-nav > ul > li >a").click(function(){
+  $(".current").removeClass("current");//Удаляем класс у прошлого выделенного
+  $(this).addClass("current");//добовляем класс
+});
+    </script>
+-->
+    
 </body>
 
 </html>

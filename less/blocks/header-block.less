@@ -6,127 +6,114 @@ header {
     opacity: 0.70;
     height: 100px;
     z-index: 5;
-        padding-left: 44px;
+    padding-left: 44px;
     .logo {
         float: left;
         margin-top: 35px;
-//        &::after {
-//            position: absolute;
-//            content: '52525252';
-//            display: block;
-//            width: 600px;
-//            height: 600px;
-//            background-color: #000;
-//                    z-index: 10; 
-//            }
-        }
-        .main-nav__list {
-            float: right;
-            font-size: 0px;
-            margin-right: -29px;
-            li {
-                display: inline-block;
-                font-family: @font-family-regular;
-                font-size: 18px;
-                line-height: 29px;
-                a {
-                    display: inline-block;
-                    color: white;
-                    padding: 35px 29px 16px;
-                    border-radius: 0 0 5px 5px;
-                    &:hover {
-                        background-color: aqua;
-                    }
+    }
+    .main-nav__list {
+        float: right;
+        font-size: 0px;
+        margin-right: -29px;
+        li {
+            display: inline-block;
+            font-family: @font-family-regular;
+            font-size: 18px;
+            line-height: 29px;
+            &.active {
+                    background-color: aqua;
                 }
-//                &:nth-child(6),
-//                &:nth-child(7),
-//                &:nth-child(8),
-//                &:nth-child(9) {
-//                    display: none;
+            a {
+                display: inline-block;
+                color: white;
+                padding: 35px 29px 16px;
+                border-radius: 0 0 5px 5px;
+//                &:hover {
+//                    background-color: aqua;
 //                }
+                &.active {
+                    color: aqua;
+                }
+                
             }
         }
     }
-    .slogan {
-        position: absolute;
-        top: 13.19%;
-    left: 54.2%;
-        width: 840px;
+}
+
+.slogan {
+    position: absolute;
+    top: 52.7%;
+    left: 54%;
+    width: 840px;
+    height: 170px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    opacity: 0.85;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    &--left {
+        font-family: 'Lato Light', Arial, sans-serif;
+        font-size: 60px;
+        line-height: 58px;
+        width: 405px;
+        height: 141px;
+        color: #74c7d5;
+        text-align: right;
+        float: left;
+        margin-top: 29px;
+    }
+    &--right {
+        width: 420px;
         height: 170px;
-        border-radius: 4px;
-        background-color: #ffffff;
-        opacity: 0.85;
-        z-index: 2;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        &--left {
-            font-family: 'Lato Light', Arial, sans-serif;
-            font-size: 60px;
-            line-height: 58px;
-            width: 405px;
-            height: 141px;
-            color: #74c7d5;
-            text-align: right;
-            float: left;
-            margin-top: 29px;
+        color: #74c7d5;
+        font-family: @font-family-black;
+        font-size: 140px;
+        letter-spacing: -4px;
+        text-transform: uppercase;
+        float: right;
+        line-height: 185px;
+    }
+}
+
+.carousel {
+    .carousel-indicators {
+        margin-bottom: 65px;
+        padding-left: 25px;
+        li {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.85);
+            border: none;
+            margin-right: 35px;
         }
-        &--right {
-            width: 420px;
-            height: 170px;
-            color: #74c7d5;
-            font-family: @font-family-black;
-            font-size: 140px;
-            letter-spacing: -4px;
-            text-transform: uppercase;
-            float: right;
-            line-height: 185px;
+        .active {
+            background-color: rgba(116, 199, 213, 0.85);
         }
     }
-    .carousel {
-        .carousel-indicators {
-            margin-bottom: 65px;
-            padding-left: 25px;
-            li {
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                background-color: rgba(255, 255, 255, 0.85);
-                border: none;
-                margin-right: 35px;
-            }
-            .active {
-                background-color: rgba(116, 199, 213, 0.85);
-            }
+    .carousel-inner {
+        .slide1 {
+            background: url("../img/slide1.jpg") no-repeat;
+            .carousel-slide-mixin;
         }
-        .carousel-inner {
-            .slide1 {
-                background: url("../img/slide1.jpg") no-repeat;
-                .carousel-slide-mixin;
-            }
-            .slide2 {
-                background: url("../img/slide2.jpg") no-repeat;
-                .carousel-slide-mixin;
-            }
-            .slide3 {
-                background: url("../img/slide3.jpg") no-repeat;
-                .carousel-slide-mixin;
-            }
+        .slide2 {
+            background: url("../img/slide2.jpg") no-repeat;
+            .carousel-slide-mixin;
         }
-//        .left:hover {
-//            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 100, 0.6) 100%);
-//        }
-//        .right:hover {
-//            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 100, 0.6) 100%);
-//        }
-        .glyphicon-chevron-left:hover {
-            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 100, 0.6) 100%);
-        }
-        .glyphicon-chevron-right:hover {
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 100, 0.6) 100%);
-           
-        }
-        .carousel-control img {
-            margin-top: 475px;
+        .slide3 {
+            background: url("../img/slide3.jpg") no-repeat;
+            .carousel-slide-mixin;
         }
     }
+    .glyphicon-chevron-left:hover {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 100, 0.6) 100%);
+    }
+    .glyphicon-chevron-right:hover {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 100, 0.6) 100%);
+    }
+    .carousel-control img {
+        margin-top: 475px;
+    }
+}
