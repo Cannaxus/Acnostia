@@ -23,7 +23,7 @@
 
 
     <!--gallery-->
-
+    <link rel="stylesheet" type="text/css" href="css/jquery.imageview.css" />
 </head>
 
 <body>
@@ -39,8 +39,10 @@
                     <li><a href="#contacts" class="">Contacts</a></li>
                 </ul>
                 <div class="fullpage-container" style="">
-                <div id="fp-nav" class="fp-show-active right" style="/* margin-top: -43.5px; */">
-                    <ul></ul></div></div>
+                    <div id="fp-nav" class="fp-show-active right" style="/* margin-top: -43.5px; */">
+                        <ul></ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -48,7 +50,7 @@
     <div id="fullpage">
 
 
-        <div class="section"  id="home">
+        <div class="section" id="home">
             <div class="slogan">
                 <div class="slogan--left">GOOD IDEAS comes</div>
                 <div class="slogan--right">First!</div>
@@ -179,7 +181,7 @@
             </div>
         </section>
         <section id="work" class="section work">
-            <div class="container">
+            <div class="container" id="iv">
                 <div class="work__textblock">
                     <h2>Our work</h2>
                     <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
@@ -196,39 +198,71 @@
                 </div>
 
                 <div class="containermix">
-                    <div>
-                        <div class="mix green mountain">
-                            <img src="img/gallery_6.jpg" width="260" height="200" alt="gallery_picture">
-                            <h3>Aenean a elit</h3>
-                        </div>
-                        <div class="mix green winter mountain">
-                            <img src="img/gallery_1.jpg" width="260" height="200" alt="gallery_picture">
-                            <h3>Aliquam </h3>
-                        </div>
-                        <div class="mix green">
-                            <img src="img/gallery_3.jpg" width="260" height="200" alt="gallery_picture">
-                            <h3>Suspendisse libero</h3>
-                        </div>
-                        <div class="mix mountain">
-                            <img src="img/gallery_4.jpg" width="260" height="200" alt="gallery_picture">
-                            <h3>Maecenas fringilla</h3>
-                        </div>
-                        <div class="mix green mountain">
-                            <img src="img/gallery_5.jpg" width="260" height="200" alt="gallery_picture">
-                            <h3>Donec vehicula</h3>
-                        </div>
-                        <div class="mix winter mountain">
-                            <img src="img/gallery_2.jpg" width="260" height="200" alt="gallery_picture">
-                            <h3>Ut et sapien</h3>
-                        </div>
-                        <div class="mix green winter">
-                            <img src="img/gallery_7.jpg" width="260" height="200" alt="gallery_picture">
-                            <h3>quis malesuada</h3>
-                        </div>
-                        <div class="mix green">
-                            <img src="img/gallery_8.jpg" width="260" height="200" alt="gallery_picture">
-                            <h3>Vestibulum ante</h3>
-                        </div>
+                    <div id="iv">
+                        
+                            <div class="mix green mountain">
+                               <a href="img/gallery_6.jpg">
+                                <img src="img/gallery_6.jpg" width="260" height="200" alt="gallery_picture">
+                                <h3>Aenean a elit</h3>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="mix green winter mountain">
+                               <a href="img/gallery_1.jpg">
+                                <img src="img/gallery_1.jpg" width="260" height="200" alt="gallery_picture">
+                                <h3>Aliquam </h3>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="mix green">
+                               <a href="img/gallery_3.jpg">
+                                <img src="img/gallery_3.jpg" width="260" height="200" alt="gallery_picture">
+                                <h3>Suspendisse libero</h3>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="mix mountain">
+                               <a href="img/gallery_4.jpg">
+                                <img src="img/gallery_4.jpg" width="260" height="200" alt="gallery_picture">
+                                <h3>Maecenas fringilla</h3>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="mix green mountain">
+                               <a href="img/gallery_5.jpg">
+                                <img src="img/gallery_5.jpg" width="260" height="200" alt="gallery_picture">
+                                <h3>Donec vehicula</h3>
+                                </a>
+                            </div>
+                        
+                       
+                            <div class="mix winter mountain">
+                                <a href="img/gallery_2.jpg">
+                                <img src="img/gallery_2.jpg" width="260" height="200" alt="gallery_picture">
+                                <h3>Ut et sapien</h3>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="mix green winter">
+                               <a href="img/gallery_7.jpg">
+                                <img src="img/gallery_7.jpg" width="260" height="200" alt="gallery_picture">
+                                <h3>quis malesuada</h3>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="mix green">
+                               <a href="img/gallery_8.jpg">
+                                <img src="img/gallery_8.jpg" width="260" height="200" alt="gallery_picture">
+                                <h3>Vestibulum ante</h3>
+                                </a>
+                            </div>
+                        
                         <div class="gap"></div>
                         <div class="gap"></div>
                         <div class="gap"></div>
@@ -236,6 +270,73 @@
                 </div>
             </div>
         </section>
+        <section id="contacts" class="section contacts">
+            <div class="container">
+                <div class="contacts__textblock">
+                    <h2>Contact us</h2>
+                    <p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+                </div>
+
+                <div class="contacts__main">
+                    <div class="contacts__main__address">
+                        <h3>Address</h3>
+                        <h4>Acrostia</h4>
+                        <p>Sevenoaks Rd</p>
+                        <p>Sevenoaks TN14 7HR, UK</p>
+
+                        <table>
+                            <caption></caption>
+                            <tr>
+                                <td class="add-margin">Phone:</td>
+                                <td>+44 555 555 555</td>
+                            </tr>
+                            <tr>
+                                <td>Fax:</td>
+                                <td>+44 555 555 555</td>
+                            </tr>
+                            <tr>
+                                <td>E-mail:</td>
+                                <td><a href="#">info@acrostia.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Skype:</td>
+                                <td>AcrOstia</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="contacts__main__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15716.900947340744!2d-118.32763380768066!3d34.09331088433776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x47c61b180d9d83ed!2sArcLight+Hollywood!5e0!3m2!1sru!2sua!4v1486054658608"></iframe>
+                    </div>
+                    <div class="contacts__main__feedback">
+                        <h3>Ask a question</h3>
+                        <form>
+                            <input type="text" name="Name" placeholder="Name" required="">
+                            <input type="text" name="E-mail" placeholder="E-mail" required="">
+                            <textarea name="Your question" cols="30" rows="7" placeholder="Your question"></textarea>
+                            <input class="btn-red" type="submit" value="send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="social">
+                    <a class="social-btn-big social-fb" href="#"></a>
+                    <a class="social-btn-big social-tw" href="#"></a>
+                    <a class="social-btn-big social-g" href="#"></a>
+                    <a class="social-btn-big social-in" href="#"></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
     </div>
     <!--modal About-->
     <div class="modal">
@@ -252,7 +353,7 @@
     <!-- scripts -->
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    
+
     <!--mixitup-->
     <script src="js/mixitup.min.js"></script>
 
@@ -263,34 +364,38 @@
                 toggleLogic: 'and'
             }
         });
+
     </script>
 
     <!-- fullpage -->
     <script>
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                menu: '#menu',
-                lockAnchors: false,
-                anchors: [''],
-                navigation: true,
-                navigationPosition: 'right',
-                navigationTooltips: ['Home', 'Service', 'About', 'Work'],
-                showActiveTooltip: true,
-                slidesNavigation: true,
-                slidesNavPosition: 'bottom',
-            });
-        });
-    </script>
-    
-    
-    
-<!--  active punkt in main-nav  -->
-
-
-<script>
+        //        $(document).ready(function() {
+        //            $('#fullpage').fullpage({
+        //                menu: '#menu',
+        //                lockAnchors: false,
+        //                anchors: [''],
+        //                navigation: true,
+        //                navigationPosition: 'right',
+        //                navigationTooltips: ['Home', 'Service', 'About', 'Work'],
+        //                showActiveTooltip: true,
+        //                slidesNavigation: true,
+        //                slidesNavPosition: 'bottom',
+        //            });
+        //        });
 
     </script>
-<!--
+
+
+
+    <!--  gallery  -->
+    <script src="js/jquery.imageview.js"></script>
+
+
+    <script>
+        $('#iv').imageview();
+
+    </script>
+    <!--
 <script>
 $(".main-nav > ul > li >a").click(function(){
   $(".current").removeClass("current");//Удаляем класс у прошлого выделенного
@@ -298,7 +403,7 @@ $(".main-nav > ul > li >a").click(function(){
 });
     </script>
 -->
-    
+
 </body>
 
 </html>
