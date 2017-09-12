@@ -62,6 +62,9 @@
 			if (e.keyCode == 39) {
 				if (this.i < this.last) this.next();
 			}
+            if (e.keyCode == 27) {
+				this.hide();
+			}
 		}
 		
 		this.next = function() {

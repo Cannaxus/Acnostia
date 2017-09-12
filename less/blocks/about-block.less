@@ -3,9 +3,10 @@
     height: 986px;
     background: url('../img/layer-about.png') no-repeat #665464;
     background-size: cover;
+    padding-top: 140px;
     &__textblock {
         width: 1053px;
-        padding-top: 200px;
+        padding-top: 35px;
         margin-bottom: 69px;
         h2 {
             padding-left: 134px;
@@ -184,6 +185,12 @@
         color: #ededed;
         font-size: 18px;
         cursor: pointer;
+        &:hover {
+            background-image: linear-gradient(to top, #131313 0%, #131313 50%, #424242 100%);
+        }
+        &:active {
+            background-image: linear-gradient(to bottom, #131313 0%, #131313 50%, #424242 100%);
+        }
     }
     .modal__form {
         float: right;
