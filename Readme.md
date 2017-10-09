@@ -12,7 +12,17 @@
 
 <table>
   <tr>
-   
+  <th>
+    * Используемые технологии: 
+    * HTML 
+    * LESS 
+    * CSS 
+    * Javascript 
+    * Grunt 
+    * jQuery 
+    * Bootstrap 3
+    * Валидная верстка по БЭМ'у
+    </th>
   <th><a href="https://cannaxus.github.io/Acrostia/" target="_blank">
         <img src="https://raw.githubusercontent.com/Cannaxus/Acrostia/master/img/preview_acrostia.jpg" width="520" alt="Главная страница">
       </a></th>
