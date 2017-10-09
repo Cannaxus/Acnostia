@@ -1,20 +1,14 @@
 .modal-go {
     display: block;
 }
-
 .onepage-pagination {
     display: none;
 }
-
-
-
 @media screen and (max-height: 900px) {
     footer{
         display: none;
     }
 }
-
-
 
 input::-webkit-input-placeholder {color:#82c8bd}
 input:-moz-placeholder {color:#82c8bd}
@@ -22,8 +16,6 @@ input:-ms-input-placeholder {color:#82c8bd}
 textarea::-webkit-input-placeholder {color:#82c8bd}
 textarea:-moz-placeholder {color:#82c8bd}
 textarea:-ms-input-placeholder {color:#82c8bd}
-
-
 
 @keyframes about-btn {
     50% {
@@ -47,8 +39,6 @@ textarea:-ms-input-placeholder {color:#82c8bd}
     }
 }
 
-
-
 @keyframes ava-out {
     1% {
         opacity: 1;
@@ -64,5 +54,32 @@ textarea:-ms-input-placeholder {color:#82c8bd}
     }
     100% {
         opacity: 1;
+    }
+}
+
+
+
+
+@-webkit-keyframes scale {
+    from {
+        -webkit-transform: translate(0%, 0%) scale(0.6);
+        transform: translate(0%, 0%) scale(0.6);
+    }
+
+    to {
+        -webkit-transform: translate(0%, 0%) scale(1);
+        transform: translate(0%, 0%) scale(1);
+    }
+}
+
+@keyframes scale {
+    from {
+        -webkit-transform: translate(0%, 0%) scale(0.6);
+        transform: translate(0%, 0%) scale(0.6);
+    }
+
+    to {
+        -webkit-transform: translate(0%, 0%) scale(1);
+        transform: translate(0%, 0%) scale(1);
     }
 }

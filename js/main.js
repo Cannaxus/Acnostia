@@ -1,4 +1,3 @@
-
 var link_buy = document.querySelectorAll(".about__textblock--btn");
 var popup_plus = document.querySelector(".modal");
 var close_plus = document.querySelector(".close-modal");
