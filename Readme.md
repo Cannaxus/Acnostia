@@ -11,7 +11,7 @@
 
 <table>
   <tr>
-    <th><a href="https://assets.htmlacademy.ru/certificates/intensive/29/250035.pdf">Сертификат</a></th>
+   
   <th><a href="https://cannaxus.github.io/Acrostia/" target="_blank">
         <img src="https://raw.githubusercontent.com/Cannaxus/Acrostia/master/img/preview_acrostia.jpg" width="520" alt="Главная страница">
       </a></th>
