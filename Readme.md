@@ -5,7 +5,7 @@
 
 ## Описание
 
-* Используемые технологии: HTML, LESS, CSS, Javascript, Grunt, jQuery, bootstrap 3,Методология - БЭМ
+* Используемые технологии: HTML, LESS, CSS, Javascript, Grunt, jQuery, bootstrap 3, Валидная верстка по БЭМ'у
 * Внедрено: Слайдер, Галерея с сортировкой, SVG_sprite, Модальное окно.
 
 ## Ссылки
