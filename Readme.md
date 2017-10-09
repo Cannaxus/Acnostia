@@ -12,7 +12,7 @@
 
 <table>
   <tr>
-  <th>
+  <th vertical-align="top">
     * Используемые технологии: <br>
     * HTML <br>
     * LESS <br>
