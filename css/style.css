@@ -84,6 +84,7 @@ header .logo {
   margin-top: 35px;
 }
 header .fp-show-active ul {
+  display: -webkit-inline-box;
   display: inline-flex;
 }
 header .main-nav__list {
@@ -236,14 +237,13 @@ header .main-nav__list li a.active {
   color: #fff;
   margin: 22px 0px 2px 33px;
   letter-spacing: -0.1px;
+  text-align: center;
 }
 .services__textblock--medium-size span {
   color: #ec9da2;
 }
 .services__textblock--standart-size {
-  width: 1052px;
   margin-top: 0px;
-  margin-left: 21px;
   letter-spacing: 0.1px;
   font-family: 'Lato Regular', Arial, sans-serif;
   font-size: 14px;
@@ -254,7 +254,6 @@ header .main-nav__list li a.active {
 }
 .services__flexblock {
   width: 1100px;
-  height: 400px;
   opacity: 0.9;
   margin: 0 auto;
 }
@@ -286,13 +285,13 @@ header .main-nav__list li a.active {
   background-position: 154px -2px;
 }
 .services__flexblock .col .sprite--design {
-  background-position: 4px -2px;
+  background-position: 3px -2px;
 }
 .services__flexblock .col .sprite--develop {
-  background-position: -146px -2px;
+  background-position: -147px -2px;
 }
 .services__flexblock .col .sprite--launch {
-  background-position: -297px -2px;
+  background-position: -298px -2px;
 }
 .services__flexblock .col h3 {
   font-family: 'Lato Light', Arial, sans-serif;
@@ -321,7 +320,6 @@ header .main-nav__list li a.active {
   padding-top: 140px;
 }
 .about__textblock {
-  width: 1053px;
   padding-top: 35px;
   margin-bottom: 69px;
 }
@@ -330,7 +328,6 @@ header .main-nav__list li a.active {
   letter-spacing: -1.6px;
 }
 .about__textblock p {
-  width: 1062px;
   margin-top: 16px;
   margin-left: 21px;
   letter-spacing: 0.1px;
@@ -345,18 +342,19 @@ header .main-nav__list li a.active {
   position: relative;
   display: block;
   margin: 52px auto;
-  left: 20px;
   width: 276px;
   height: 50px;
   border: none;
   border-radius: 5px;
   padding: 0;
+  left: -4px;
   background-color: #a1ca6c;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
   font-size: 25px;
-  animation: about-btn 3s infinite alternate;
+  -webkit-animation: about-btn 3s infinite alternate;
+          animation: about-btn 3s infinite alternate;
   cursor: pointer;
   font-family: 'Lato Black', Arial, sans-serif;
   line-height: 21px;
@@ -370,13 +368,15 @@ header .main-nav__list li a.active {
   position: absolute;
   bottom: -33px;
   left: 125px;
-  animation: about-btn-b 3s infinite alternate;
+  -webkit-animation: about-btn-b 3s infinite alternate;
+          animation: about-btn-b 3s infinite alternate;
 }
 .about__flexblock {
-  display: flex;
   width: 1100px;
+  margin: 0 auto;
 }
 .about__flexblock .card {
+  float: left;
   position: relative;
   display: inline-block;
   width: 260px;
@@ -385,6 +385,7 @@ header .main-nav__list li a.active {
   background-color: rgba(77, 63, 75, 0.5);
   padding-top: 42px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 .about__flexblock .card:last-child {
   margin-right: 0px;
@@ -397,8 +398,10 @@ header .main-nav__list li a.active {
   background-image: url(../img/sprite.png);
 }
 .about__flexblock .card:hover .card-ava--out {
-  animation: ava-out 0.5s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: ava-out 0.5s linear;
+          animation: ava-out 0.5s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .about__flexblock .card .card-ava--in {
   position: absolute;
@@ -411,8 +414,10 @@ header .main-nav__list li a.active {
   top: 42px;
 }
 .about__flexblock .card:hover .card-ava--in {
-  animation: ava-in 0.5s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: ava-in 0.5s linear;
+          animation: ava-in 0.5s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .about__flexblock .card h3 {
   color: #c7b6c5;
@@ -479,7 +484,8 @@ header .main-nav__list li a.active {
   background-color: #3c61b0;
 }
 .modal {
-  animation: scale 0.5s;
+  -webkit-animation: scale 0.5s;
+          animation: scale 0.5s;
   display: none;
   position: fixed;
   top: 50%;
@@ -560,7 +566,6 @@ header .main-nav__list li a.active {
   padding-top: 20px;
 }
 .work__textblock {
-  width: 1053px;
   padding-top: 100px;
   margin-bottom: 51px;
 }
@@ -569,9 +574,7 @@ header .main-nav__list li a.active {
   letter-spacing: -1.6px;
 }
 .work__textblock p {
-  width: 1062px;
   margin-top: 16px;
-  margin-left: 21px;
   letter-spacing: 0.1px;
   font-family: 'Lato Regular', Arial, sans-serif;
   font-size: 14px;
@@ -581,12 +584,13 @@ header .main-nav__list li a.active {
   text-align: center;
 }
 .work__filter {
-  width: 1100px;
   height: 101px;
   padding-top: 25px;
   border-top: 1px solid #94b963;
   border-bottom: 1px solid #94b963;
+  transition: -webkit-transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   margin-bottom: 47px;
 }
 .work__filter .gallery-btn {
@@ -602,7 +606,8 @@ header .main-nav__list li a.active {
   color: #fff;
   text-align: center;
   font-size: 25px;
-  animation: work-btn 3s infinite alternate;
+  -webkit-animation: work-btn 3s infinite alternate;
+          animation: work-btn 3s infinite alternate;
   cursor: pointer;
   border: none;
   font-family: 'Lato Black', Arial, sans-serif;
@@ -638,13 +643,12 @@ header .main-nav__list li a.active {
 }
 .contacts {
   width: 100%;
-  height: 860px;
+  height: 890px;
   background: url('../img/layer-contacts.png') no-repeat #75b4aa;
   background-size: cover;
   padding-top: 160px;
 }
 .contacts__textblock {
-  width: 1053px;
   padding-top: 0px;
   margin-bottom: 90px;
 }
@@ -653,9 +657,7 @@ header .main-nav__list li a.active {
   letter-spacing: -1.6px;
 }
 .contacts__textblock p {
-  width: 1062px;
   margin-top: 16px;
-  margin-left: 21px;
   letter-spacing: 0.1px;
   font-family: 'Lato Regular', Arial, sans-serif;
   font-size: 14px;
@@ -792,7 +794,7 @@ footer {
 }
 footer .social {
   width: 360px;
-  height: 110px;
+  height: 125px;
   margin: 0 auto;
   font-size: 0;
 }
@@ -838,11 +840,6 @@ footer .social .social-in:hover {
 .onepage-pagination {
   display: none;
 }
-@media screen and (max-height: 900px) {
-  footer {
-    display: none;
-  }
-}
 input::-webkit-input-placeholder {
   color: #82c8bd;
 }
@@ -861,10 +858,64 @@ textarea:-moz-placeholder {
 textarea:-ms-input-placeholder {
   color: #82c8bd;
 }
+@media screen and (max-width: 1101px) {
+  .container {
+    width: 800px;
+  }
+  .services {
+    height: 1320px;
+  }
+  .services__textblock h2 {
+    padding-left: 212px;
+  }
+  .services__flexblock {
+    width: 540px;
+  }
+  .services__flexblock .col:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .about {
+    height: 1280px;
+  }
+  .about__flexblock {
+    width: 540px;
+  }
+  .about__textblock h2 {
+    padding-left: 0px;
+  }
+  .about__flexblock .card:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .work {
+    height: 1270px;
+  }
+  .work__textblock h2 {
+    padding-left: 250px;
+  }
+  .contacts__textblock h2 {
+    padding-left: 207px;
+  }
+  .contacts__main__map {
+    display: none;
+  }
+}
+@-webkit-keyframes about-btn {
+  50% {
+    background: white;
+    color: #a1ca6c;
+  }
+}
 @keyframes about-btn {
   50% {
     background: white;
     color: #a1ca6c;
+  }
+}
+@-webkit-keyframes about-btn-b {
+  50% {
+    border-right: 17px solid transparent;
+    border-left: 17px solid transparent;
+    border-top: 17px solid white;
   }
 }
 @keyframes about-btn-b {
@@ -874,10 +925,24 @@ textarea:-ms-input-placeholder {
     border-top: 17px solid white;
   }
 }
+@-webkit-keyframes work-btn {
+  50% {
+    background: white;
+    color: #f6c248;
+  }
+}
 @keyframes work-btn {
   50% {
     background: white;
     color: #f6c248;
+  }
+}
+@-webkit-keyframes ava-out {
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes ava-out {
@@ -886,6 +951,14 @@ textarea:-ms-input-placeholder {
   }
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes ava-in {
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes ava-in {

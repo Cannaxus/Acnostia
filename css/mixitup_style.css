@@ -134,32 +134,3 @@
     width: 260px;
     height: 250px;
 }
-
-
-/* 3 Columns */
-/*
-@media screen and (min-width: 541px) {
-    .mix,
-    .gap {
-        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
-    }
-}
-*/
-/* 4 Columns */
-/*
-@media screen and (min-width: 961px) {
-    .mix,
-    .gap {
-        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
-    }
-}
-*/
-/* 5 Columns */
-/*
-@media screen and (min-width: 1281px) {
-    .mix,
-    .gap {
-        width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
-    }
-}
-*/
