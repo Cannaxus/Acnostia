@@ -206,10 +206,10 @@ header .main-nav__list li a.active {
   background-size: cover;
 }
 .carousel .glyphicon-chevron-left:hover {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 100, 0.6) 100%);
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 100, 0.6) 100%);
 }
 .carousel .glyphicon-chevron-right:hover {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 100, 0.6) 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 100, 0.6) 100%);
 }
 .carousel .carousel-control img {
   margin-top: 475px;
@@ -252,12 +252,12 @@ header .main-nav__list li a.active {
   color: #fff;
   text-align: center;
 }
-.services__flexblock {
+.services__block {
   width: 1100px;
   opacity: 0.9;
   margin: 0 auto;
 }
-.services__flexblock .col {
+.services__block .col {
   float: left;
   width: 260px;
   margin-right: 20px;
@@ -265,15 +265,15 @@ header .main-nav__list li a.active {
   background-color: #c8535a;
   margin-bottom: 20px;
 }
-.services__flexblock .col:last-child {
+.services__block .col:last-child {
   margin-right: 0px;
 }
-.services__flexblock .col img {
+.services__block .col img {
   margin-top: 44px;
   margin-left: 59px;
   opacity: 1;
 }
-.services__flexblock .col .sprite {
+.services__block .col .sprite {
   margin-left: 52px;
   margin-top: 39px;
   background-size: cover;
@@ -281,19 +281,19 @@ header .main-nav__list li a.active {
   height: 151px;
   background-image: url(../img/Sprite_Acrostia.svg);
 }
-.services__flexblock .col .sprite--research {
+.services__block .col .sprite--research {
   background-position: 154px -2px;
 }
-.services__flexblock .col .sprite--design {
+.services__block .col .sprite--design {
   background-position: 3px -2px;
 }
-.services__flexblock .col .sprite--develop {
+.services__block .col .sprite--develop {
   background-position: -147px -2px;
 }
-.services__flexblock .col .sprite--launch {
+.services__block .col .sprite--launch {
   background-position: -298px -2px;
 }
-.services__flexblock .col h3 {
+.services__block .col h3 {
   font-family: 'Lato Light', Arial, sans-serif;
   font-size: 30px;
   color: #fff;
@@ -303,7 +303,7 @@ header .main-nav__list li a.active {
   margin-top: 15px;
   margin-bottom: 35px;
 }
-.services__flexblock .col p {
+.services__block .col p {
   font-family: 'Lato Light', Arial, sans-serif;
   font-size: 14px;
   color: #fff;
@@ -371,11 +371,11 @@ header .main-nav__list li a.active {
   -webkit-animation: about-btn-b 3s infinite alternate;
           animation: about-btn-b 3s infinite alternate;
 }
-.about__flexblock {
+.about__block {
   width: 1100px;
   margin: 0 auto;
 }
-.about__flexblock .card {
+.about__block .card {
   float: left;
   position: relative;
   display: inline-block;
@@ -387,23 +387,23 @@ header .main-nav__list li a.active {
   margin-right: 20px;
   margin-bottom: 20px;
 }
-.about__flexblock .card:last-child {
+.about__block .card:last-child {
   margin-right: 0px;
 }
-.about__flexblock .card .card-ava--out {
+.about__block .card .card-ava--out {
   width: 165px;
   height: 165px;
   margin-left: 46px;
   background-position: -20px -20px;
   background-image: url(../img/sprite.png);
 }
-.about__flexblock .card:hover .card-ava--out {
+.about__block .card:hover .card-ava--out {
   -webkit-animation: ava-out 0.5s linear;
           animation: ava-out 0.5s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.about__flexblock .card .card-ava--in {
+.about__block .card .card-ava--in {
   position: absolute;
   width: 165px;
   height: 165px;
@@ -413,13 +413,13 @@ header .main-nav__list li a.active {
   opacity: 0;
   top: 42px;
 }
-.about__flexblock .card:hover .card-ava--in {
+.about__block .card:hover .card-ava--in {
   -webkit-animation: ava-in 0.5s linear;
           animation: ava-in 0.5s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.about__flexblock .card h3 {
+.about__block .card h3 {
   color: #c7b6c5;
   font-size: 25px;
   text-transform: uppercase;
@@ -428,7 +428,7 @@ header .main-nav__list li a.active {
   font-family: 'Lato Black', Arial, sans-serif;
   line-height: 21px;
 }
-.about__flexblock .card p {
+.about__block .card p {
   text-align: center;
   color: #a1ca6c;
   font-size: 14px;
@@ -437,14 +437,14 @@ header .main-nav__list li a.active {
   margin-bottom: 33px;
   font-family: 'Lato Regular', Arial, sans-serif;
 }
-.about__flexblock .card:hover .social-btn {
+.about__block .card:hover .social-btn {
   border-bottom: 1px solid #e05c64;
 }
-.about__flexblock .card__social {
+.about__block .card__social {
   width: 200px;
   margin-left: 41px;
 }
-.about__flexblock .card__social .social-btn {
+.about__block .card__social .social-btn {
   margin-right: 16px;
   border-radius: 50%;
   display: inline-block;
@@ -453,34 +453,34 @@ header .main-nav__list li a.active {
   background-image: url(../img/sprite.png);
   background-color: #a1859e;
 }
-.about__flexblock .card__social .social-btn:last-child {
+.about__block .card__social .social-btn:last-child {
   margin-right: 0px;
 }
-.about__flexblock .card__social .social-btn:hover {
+.about__block .card__social .social-btn:hover {
   border: none;
 }
-.about__flexblock .card__social--fb {
+.about__block .card__social--fb {
   background-position: -423px -87px;
 }
-.about__flexblock .card__social--fb:hover {
+.about__block .card__social--fb:hover {
   background-color: #4e689f;
 }
-.about__flexblock .card__social--tw {
+.about__block .card__social--tw {
   background-position: -473px -87px;
 }
-.about__flexblock .card__social--tw:hover {
+.about__block .card__social--tw:hover {
   background-color: #75c8d6;
 }
-.about__flexblock .card__social--g {
+.about__block .card__social--g {
   background-position: -523px -87px;
 }
-.about__flexblock .card__social--g:hover {
+.about__block .card__social--g:hover {
   background-color: #e05c64;
 }
-.about__flexblock .card__social--in {
+.about__block .card__social--in {
   background-position: -573px -87px;
 }
-.about__flexblock .card__social--in:hover {
+.about__block .card__social--in:hover {
   background-color: #3c61b0;
 }
 .modal {
@@ -868,22 +868,22 @@ textarea:-ms-input-placeholder {
   .services__textblock h2 {
     padding-left: 212px;
   }
-  .services__flexblock {
+  .services__block {
     width: 540px;
   }
-  .services__flexblock .col:nth-child(2n) {
+  .services__block .col:nth-child(2n) {
     margin-right: 0px;
   }
   .about {
     height: 1280px;
   }
-  .about__flexblock {
+  .about__block {
     width: 540px;
   }
   .about__textblock h2 {
     padding-left: 0px;
   }
-  .about__flexblock .card:nth-child(2n) {
+  .about__block .card:nth-child(2n) {
     margin-right: 0px;
   }
   .work {
